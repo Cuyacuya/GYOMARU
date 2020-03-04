@@ -3,7 +3,7 @@
 import discord, asyncio
 import os
 
-token = "NjgyMTg4NzUwNDIzMzI2NzQw.XlnqiA.OShcs1GbpPwdOPcnfaec9GOggus"
+token = "access_token"
 client = discord.Client()
 
 @client.event
@@ -23,4 +23,4 @@ async def on_message(message):
         await message.author.send("사실 난 여기있다구")
         
 access_token = os.environ["BOT_TOKEN"]
-client.run("NjgyMTg4NzUwNDIzMzI2NzQw.XlnqiA.OShcs1GbpPwdOPcnfaec9GOggus")
+client.run("access_token")
