@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
 import discord, asyncio
+import os
 
 token = "NjgyMTg4NzUwNDIzMzI2NzQw.XlnqiA.OShcs1GbpPwdOPcnfaec9GOggus"
 client = discord.Client()
@@ -20,5 +21,6 @@ async def on_message(message):
     if message.content == "!안녕":
         await message.channel.send("반가워요")
         await message.author.send("사실 난 여기있다구")
-
-client.run(NjgyMTg4NzUwNDIzMzI2NzQw.XlnqiA.OShcs1GbpPwdOPcnfaec9GOggus)
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run("NjgyMTg4NzUwNDIzMzI2NzQw.XlnqiA.OShcs1GbpPwdOPcnfaec9GOggus")
